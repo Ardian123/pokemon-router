@@ -1,5 +1,4 @@
 import {
-  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -27,8 +26,6 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-
-// createBrowserRouter();
 
 function App() {
   return (
