@@ -27,7 +27,7 @@ const RootLayout = () => {
           </nav>
         </div>
       </header>
-      <main>
+      <main className="wrapper">
         <Outlet />
       </main>
     </div>
