@@ -19,8 +19,8 @@ const RootLayout = () => {
                 </NavLink>
               </li>
               <li className="nav__item">
-                <NavLink className="nav__link" to="help">
-                  Help
+                <NavLink className="nav__link" to="pokedex">
+                  Pokedex
                 </NavLink>
               </li>
             </ul>
