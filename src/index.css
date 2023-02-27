@@ -1,6 +1,7 @@
 :root {
   --color-background-primary: #659dbd;
   --background-color-secondary: #fbeec1;
+  --light: #fefefe;
 }
 
 body {
@@ -33,7 +34,8 @@ h1 {
 }
 
 .wrapper {
-  max-width: 80rem;
+  max-width: 82rem;
+  padding-inline: 1rem;
   margin-inline: auto;
 }
 
@@ -43,8 +45,13 @@ h1 {
   gap: 1rem;
 }
 
+.u-shadow {
+  box-shadow: 7px 10px 19px 3px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   background-color: var(--background-color-secondary);
+  margin-bottom: 2rem;
 }
 
 .nav {
@@ -67,4 +74,37 @@ h1 {
 
 .nav__link:hover {
   text-decoration: underline;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__figure {
+  border-radius: 1rem;
+  max-width: 16rem;
+  border: 0.3rem solid #daad86;
+  margin: 3.5rem 2rem 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.error__figcaption {
+  background-color: var(--background-color-secondary);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.btn {
+  display: block;
+  border: none;
+  appearance: none;
+  border-radius: 100rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  background-color: var(--light);
 }
