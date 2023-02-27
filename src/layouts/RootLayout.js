@@ -7,23 +7,15 @@ const RootLayout = () => {
         <div className="wrapper u-flex">
           <h1>PokeRouter</h1>
           <nav className="nav">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <NavLink className="nav__link" to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink className="nav__link" to="about">
-                  About
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink className="nav__link" to="pokedex">
-                  Pokedex
-                </NavLink>
-              </li>
-            </ul>
+            <NavLink className="nav__link" to="/">
+              Home
+            </NavLink>
+            <NavLink className="nav__link" to="about">
+              About
+            </NavLink>
+            <NavLink className="nav__link" to="pokedex/kanto">
+              Pokedex
+            </NavLink>
           </nav>
         </div>
       </header>

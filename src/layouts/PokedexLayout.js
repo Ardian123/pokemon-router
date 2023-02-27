@@ -10,54 +10,34 @@ const PokedexLayout = () => {
         dignissimos ut quae itaque.
       </p>
 
-      <nav>
-        <ul>
-          <li>
-            <NavLink className="nav__link" to="kanto">
-              Kanto
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="johto">
-              Johto
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="hoenn">
-              Hoenn
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="sinnoh">
-              Sinnoh
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="unova">
-              Unova
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="kalos">
-              Kalos
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="alola">
-              Alola
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="galar">
-              Galar
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav__link" to="paldea">
-              Paldea
-            </NavLink>
-          </li>
-        </ul>
+      <nav className="nav-pokedex">
+        <NavLink className="nav-pokedex__link" to="kanto">
+          Kanto
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="johto">
+          Johto
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="hoenn">
+          Hoenn
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="sinnoh">
+          Sinnoh
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="unova">
+          Unova
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="kalos">
+          Kalos
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="alola">
+          Alola
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="galar">
+          Galar
+        </NavLink>
+        <NavLink className="nav-pokedex__link" to="paldea">
+          Paldea
+        </NavLink>
       </nav>
 
       <Outlet />

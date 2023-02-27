@@ -30,6 +30,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="pokedex" element={<NotFound />} />
       <Route path="pokedex" element={<PokedexLayout />}>
         <Route path="kanto" element={<Kanto />}></Route>
         <Route path="johto" element={<Johto />}></Route>
