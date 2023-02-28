@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const RootLayout = () => {
   return (
     <div className="root-layout">
-      <header class="header">
+      <header className="header">
         <div className="wrapper u-flex">
           <h1>PokeRouter</h1>
           <nav className="nav">
