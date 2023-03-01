@@ -24,12 +24,18 @@ import NotFound from "./pages/NotFound";
 // Layout
 import RootLayout from "./layouts/RootLayout";
 import PokedexLayout from "./layouts/PokedexLayout";
+import Pokemon, { pokemonLoader } from "./pages/Pokemon";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route
+        path="pokemon/:name"
+        loader={pokemonLoader}
+        element={<Pokemon />}
+      ></Route>
       <Route path="pokedex" element={<NotFound />} />
       <Route path="pokedex" element={<PokedexLayout />}>
         <Route path="kanto" loader={kantoLoader} element={<Kanto />}></Route>
