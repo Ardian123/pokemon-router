@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Kalos = () => {
   const data = useLoaderData();
@@ -8,7 +8,9 @@ const Kalos = () => {
     <div className="grid grid-center pokedex">
       {kalos.map((pokemon) => (
         <div key={pokemon.name}>
-          <p>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</p>
+          <Link to={`../../pokemon/${pokemon.name}`}>
+            {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
+          </Link>
         </div>
       ))}
     </div>

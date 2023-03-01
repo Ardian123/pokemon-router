@@ -166,7 +166,7 @@ a {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   border: none;
   appearance: none;
   border-radius: 100rem;
@@ -186,6 +186,18 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.pokemon-error {
+  max-width: 15rem;
+  margin-inline: auto;
+}
+
+.pokemon-error > * {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pokemon-gallery img {

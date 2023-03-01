@@ -51,10 +51,11 @@ const Pokemon = () => {
 };
 
 export const pokemonLoader = async ({ params }) => {
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.name}`);
+  const { name } = params;
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
 
-  if (!res) {
-    return;
+  if (!res.ok) {
+    throw Error(name);
   }
 
   return res.json();

@@ -25,6 +25,7 @@ import NotFound from "./pages/NotFound";
 import RootLayout from "./layouts/RootLayout";
 import PokedexLayout from "./layouts/PokedexLayout";
 import Pokemon, { pokemonLoader } from "./pages/Pokemon";
+import PokemonError from "./pages/PokemonError";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route
         path="pokemon/:name"
         loader={pokemonLoader}
+        errorElement={<PokemonError />}
         element={<Pokemon />}
       ></Route>
       <Route path="pokedex" element={<NotFound />} />
