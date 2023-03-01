@@ -37,7 +37,8 @@ const Pokemon = () => {
       <h1>{pokemon.name}</h1>
       <div className="pokemon-gallery">
         {pokemon.images.map(
-          (image) => image && <img src={image} alt={data.name} />
+          (image) =>
+            image && <img key={data.name} src={image} alt={data.name} />
         )}
       </div>
       <p>
