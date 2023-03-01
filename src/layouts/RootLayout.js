@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const RootLayout = () => {
   return (
@@ -19,6 +20,7 @@ const RootLayout = () => {
           </nav>
         </div>
       </header>
+      <Breadcrumbs />
       <main className="wrapper">
         <Outlet />
       </main>

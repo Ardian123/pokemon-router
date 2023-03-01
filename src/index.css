@@ -203,3 +203,10 @@ a {
 .pokemon-gallery img {
   max-height: 250px;
 }
+
+.breadcrumb {
+  display: inline-block;
+  padding: 0.2rem;
+  background-color: var(--light);
+  transform: skewX(-16deg);
+}
